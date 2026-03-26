@@ -6,13 +6,15 @@ export interface Platform {
   id: number;
   name: string;
   slug: string;
+  metacritic: number;
 }
 
 export interface Game {
   id: number;
   name: string;
+  metacritic: number;
   background_image: string;
-  parent_platforms: { platform: Platform }[]
+  parent_platforms: { platform: Platform }[];
 }
 
 interface FetchGameResponse {
