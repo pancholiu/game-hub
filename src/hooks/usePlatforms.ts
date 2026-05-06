@@ -4,6 +4,7 @@ interface Platform {
     id: number;
     name: string;
     slug: string;
+    metacritic: number;
 }
 
 const usePlatforms = () => useData<Platform>("/platforms/lists/parents");
